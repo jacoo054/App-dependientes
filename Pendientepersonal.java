@@ -1,6 +1,6 @@
-public class Pendientepersonal extends Pendiente {
+public class PendientePersonal extends Pendiente {
 
-    public Pendientepersonal(String descripcion,String año,String mes, String dia, String hora) {
+    public PendientePersonal(String descripcion,String año,String mes, String dia, String hora) {
         super(descripcion, año,mes, dia, hora);
     }
 
