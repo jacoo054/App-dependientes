@@ -39,3 +39,45 @@ public class Main {
 
                 Pendiente p = new PendientePersonal(descripcion, año,mes,  dia, hora);
                 agenda.agregarPendiente(p);
+
+                } else if (opcion == 2) {
+
+                System.out.print("Descripción: ");
+                String descripcion = sc.nextLine();
+
+                System.out.print("Año: ");
+                String año = sc.nextLine();
+
+                System.out.print("Mes: ");
+                String mes = sc.nextLine();
+
+                System.out.print("Día: ");
+                String dia = sc.nextLine();
+
+                System.out.print("Hora: ");
+                String hora = sc.nextLine();
+
+                Pendiente p = new PendienteTrabajo(descripcion, año, mes, dia, hora);
+                agenda.agregarPendiente(p);
+
+            } else if (opcion == 3) {
+
+                agenda.mostrarPendientes();
+
+            } else if (opcion == 4) {
+
+                salir = true;
+                System.out.println("Programa finalizado.");
+
+            } else {
+
+                System.out.println("Opción inválida, intente de nuevo.");
+            }
+        }
+
+        sc.close();
+    }
+}
+
+
+
