@@ -19,3 +19,23 @@ public class Main {
 
             int opcion = sc.nextInt();
             sc.nextLine(); 
+
+            if (opcion == 1) {
+
+                System.out.print("Descripción: ");
+                String descripcion = sc.nextLine();
+
+                System.out.print("Año: ");
+                String año = sc.nextLine();
+
+                System.out.print("Mes: ");
+                String mes = sc.nextLine();
+
+                System.out.print("Día: ");
+                String dia = sc.nextLine();
+
+                System.out.print("Hora: ");
+                String hora = sc.nextLine();
+
+                Pendiente p = new PendientePersonal(descripcion, año,mes,  dia, hora);
+                agenda.agregarPendiente(p);
